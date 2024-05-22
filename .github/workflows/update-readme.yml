@@ -16,7 +16,7 @@ jobs:
         run: |
           curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" https://api.github.com/users/thegr8dev/events > events.json
           echo "## Recent Activity" > recent-activity.md
-          cat events.json | jq '.[0:5] | .[] | "- \(.type) [\(.repo.name)](https://github.com/\(.repo.name)): \(.created_at)"' >> recent-activity.md
+          cat events.json | jq '.[0:5] | .[] | "- \(.type) on [\(.repo.name)](https://github.com/\(.repo.name)) at \(.created_at)"' >> recent-activity.md
           cat recent-activity.md
 
       - name: Update README
