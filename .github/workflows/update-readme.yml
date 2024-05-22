@@ -14,20 +14,20 @@ jobs:
 
       - name: Fetch GitHub Events
         run: |
-          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/yourusername/events > events.json
+          curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" https://api.github.com/users/thegr8dev/events > events.json
           echo "## Recent Activity" > recent-activity.md
-          cat events.json | jq '.[0:5] | .[] | "- \(.type) [\(.repo.name)](\(.repo.url)): \(.created_at)"' >> recent-activity.md
+          cat events.json | jq '.[0:5] | .[] | "- \(.type) [\(.repo.name)](https://github.com/\(.repo.name)): \(.created_at)"' >> recent-activity.md
           cat recent-activity.md
 
       - name: Update README
         run: |
-          echo "$(cat README.md | sed '/<!--START_SECTION:activity-->/r recent-activity.md' | sed '/<!--END_SECTION:activity-->/,/<\/r>/d')" > README.md
-          cat README.md
+          awk '/<!--START_SECTION:activity-->/{print;system("cat recent-activity.md");next}1' README.md > temp.md
+          mv temp.md README.md
 
       - name: Commit and Push if Changed
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
-          git diff-index --quiet HEAD || git commit -m "Update recent activity"
+          git diff --cached --exit-code || git commit -m "Update recent activity"
           git push
