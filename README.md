@@ -8,23 +8,25 @@
 - **Open-Source Contribution**: Eager to give back and collaborate on exciting projects.
 
 ### Get in Touch
-- 💼 [LinkedIn](https://www.linkedin.com/in/yourprofile)
-- 🐦 [Twitter](https://twitter.com/yourprofile)
-- 📧 [Email](mailto:your.email@example.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/ankit-kabra-00737b151)
+- 🐦 [Twitter](https://twitter.com/thegr8dev)
+- 📧 [Email](mailto:ankitswonders@gmail.com)
 
 ### Pinned Repositories
-- [**Library Master**](https://github.com/yourusername/library-master): Manage library subscriptions, seat records, user roles, permissions, and seat availability.
-- [**Awesome Project 2**](https://github.com/yourusername/awesome-project-2): Description of the second project.
-- [**Awesome Project 3**](https://github.com/yourusername/awesome-project-3): Description of the third project.
+- [**Awesome Project 2**](https://github.com/thegr8dev/doctorpatientportal): Description of the second project.
+- [**Library Master**](https://github.com/thegr8dev/mylibrary): Manage library subscriptions, seat records, user roles, permissions, and seat availability.
+- More to come !
 
 ### Tech Stack
 - Laravel
 - Filament
+- PHP
 - Vue.js
 - jQuery
-- PHP
 - JavaScript
 - HTML/CSS
+- Bootstrap (v3 to Latest).
+- Git Actions 
 
 ### GitHub Stats
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=thegr8dev&show_icons=true&theme=radical)
