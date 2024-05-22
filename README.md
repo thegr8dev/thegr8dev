@@ -32,9 +32,8 @@
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=thegr8dev&show_icons=true&theme=radical)
 
 ### Recent Activity
-- 💬 Commented on [Issue #123](https://github.com/repository/issues/123) in [repository](https://github.com/repository).
-- 🎉 Created a pull request in [repository](https://github.com/repository).
-- ⭐️ Starred [repository](https://github.com/repository).
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 ### Fun Fact
 🚀 When I'm not coding, you can find me exploring the latest tech trends or tinkering with new frameworks and tools.
