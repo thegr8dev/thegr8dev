@@ -13,7 +13,7 @@
 - 📧 [Email](mailto:ankitswonders@gmail.com)
 
 ### Pinned Repositories
-- [**Awesome Project 2**](https://github.com/thegr8dev/doctorpatientportal): Description of the second project.
+- [**Doctor Patient Portal**](https://github.com/thegr8dev/doctorpatientportal): Description of the second project.
 - [**Library Master**](https://github.com/thegr8dev/mylibrary): Manage library subscriptions, seat records, user roles, permissions, and seat availability.
 - More to come !
 
