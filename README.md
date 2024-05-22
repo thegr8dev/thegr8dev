@@ -38,34 +38,34 @@
 **Issue:** [View Issue](https://github.com/thegr8dev/mylibrary/issues/1)  
 **Title:** "Test issue "  
 **Date:** 22/05/2024 10:44 AM  
-**Author:** [thegr8dev](https://github.com/thegr8dev) <img src=https://avatars.githubusercontent.com/u/33778557?&s=24 style="float:right;" />
+**Author:** [thegr8dev](https://github.com/thegr8dev) <img src="https://avatars.githubusercontent.com/u/33778557?&s=24" style="float:right;" />
 
 #### Issue Closed 🛑
 **Repository:** [thegr8dev/doctorpatientportal](https://github.com/thegr8dev/doctorpatientportal)  
 **Issue:** [View Issue](https://github.com/thegr8dev/doctorpatientportal/issues/14)  
 **Title:** "Test issue !"  
 **Date:** 22/05/2024 10:44 AM  
-**Author:** [thegr8dev](https://github.com/thegr8dev) <img src=https://avatars.githubusercontent.com/u/33778557?&s=24 style="float:right;" />
+**Author:** [thegr8dev](https://github.com/thegr8dev) <img src="https://avatars.githubusercontent.com/u/33778557?&s=24" style="float:right;" />
 
 #### Issue Opened 📝
 **Repository:** [thegr8dev/doctorpatientportal](https://github.com/thegr8dev/doctorpatientportal)  
 **Issue:** [View Issue](https://github.com/thegr8dev/doctorpatientportal/issues/14)  
 **Title:** "Test issue !"  
 **Date:** 22/05/2024 10:42 AM  
-**Author:** [thegr8dev](https://github.com/thegr8dev) <img src=https://avatars.githubusercontent.com/u/33778557?&s=24 style="float:right;" />
+**Author:** [thegr8dev](https://github.com/thegr8dev) <img src="https://avatars.githubusercontent.com/u/33778557?&s=24" style="float:right;" />
 
 #### Issue Opened 📝
 **Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary)  
 **Issue:** [View Issue](https://github.com/thegr8dev/mylibrary/issues/1)  
 **Title:** "Test issue "  
 **Date:** 22/05/2024 10:41 AM  
-**Author:** [thegr8dev](https://github.com/thegr8dev) <img src=https://avatars.githubusercontent.com/u/33778557?&s=24 style="float:right;" />
+**Author:** [thegr8dev](https://github.com/thegr8dev) <img src="https://avatars.githubusercontent.com/u/33778557?&s=24" style="float:right;" />
 
 #### Pushed Changes 📤
 **Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary)  
 **Commit:** [View Commit](https://github.com/thegr8dev/mylibrary/commit/6190516063f9978a54269b67050d039fecb248e7)  
 **Message:** "Merge branch 'master' of https://github.com/thegr8dev/mylibrary"  
 **Date:** 22/05/2024 09:33 AM  
-**Author:** [thegr8dev](https://github.com/thegr8dev) <img src=https://avatars.githubusercontent.com/u/33778557?&s=24 style="float:right;" />
+**Author:** [thegr8dev](https://github.com/thegr8dev) <img src="https://avatars.githubusercontent.com/u/33778557?&s=24" style="float:right;" />
 
 <!--END_SECTION:activity-->
