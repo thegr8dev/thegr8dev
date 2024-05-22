@@ -19,7 +19,6 @@ jobs:
           cat events.json | jq -r '
             .[0:5] |
             map(
-              select(.repo.name != "thegr8dev/thegr8dev") |
               if .type == "PushEvent" then
                 "#### PushEvent 📤\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Commit:** [View Commit](https://github.com/\(.repo.name)/commit/\(.payload.commits[-1].sha))  \n**Message:** \"\(.payload.commits[-1].message)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
               elif .type == "PullRequestEvent" then
@@ -40,9 +39,8 @@ jobs:
 
       - name: Update README
         run: |
-          awk '/<!--START_SECTION:activity-->/{print;f=1;next} /<!--END_SECTION:activity-->/{f=0} !f{print}' README.md > temp.md
+          awk '/<!--START_SECTION:activity-->/{print;system("cat recent-activity.md");next}1' README.md > temp.md
           mv temp.md README.md
-          sed -i '/<!--START_SECTION:activity-->/r recent-activity.md' README.md
 
       - name: Commit and Push if Changed
         run: |
