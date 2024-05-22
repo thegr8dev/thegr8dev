@@ -40,8 +40,9 @@ jobs:
 
       - name: Update README
         run: |
-          awk '/<!--START_SECTION:activity-->/ {print; system("cat recent-activity.md"); next} /<!--END_SECTION:activity-->/ {found=1} found && !/<!--END_SECTION:activity-->/ {next} {print}' README.md > temp.md
+          awk '/<!--START_SECTION:activity-->/{print;f=1;next} /<!--END_SECTION:activity-->/{f=0} !f{print}' README.md > temp.md
           mv temp.md README.md
+          sed -i '/<!--START_SECTION:activity-->/r recent-activity.md' README.md
 
       - name: Commit and Push if Changed
         run: |
