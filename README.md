@@ -9,7 +9,7 @@
 
 ### Get in Touch
 - 💼 [LinkedIn](https://www.linkedin.com/in/ankit-kabra-00737b151)
-- 🐦 [Twitter](https://twitter.com/thegr8dev)
+- 🐦 [Twitter](https://twitter.com/thegr8devX)
 - 📧 [Email](mailto:ankitswonders@gmail.com)
 
 ### Pinned Repositories
