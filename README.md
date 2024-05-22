@@ -33,6 +33,7 @@
 
 <!--START_SECTION:activity-->
 ### Recent GitHub Activity 🎉
+### Recent GitHub Activity 🎉
 #### PushEvent 📤
 **Repository:** [thegr8dev/thegr8dev](https://github.com/thegr8dev/thegr8dev)  
 **Commit:** [View Commit](https://github.com/thegr8dev/thegr8dev/commit/5b5c023bd74ee95876ee52d73865c1f6cdb35d29)  
