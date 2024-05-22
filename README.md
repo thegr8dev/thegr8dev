@@ -13,7 +13,7 @@
 - 📧 [Email](mailto:ankitswonders@gmail.com)
 
 ### Pinned Repositories
-- [**Doctor Patient Portal**](https://github.com/thegr8dev/doctorpatientportal): Description of the second project.
+- [**Doctor Patient Portal**](https://github.com/thegr8dev/doctorpatientportal): Doctor Patient Portal is a basic portal which helps those patients who stand in line for hours to take appointments with doctor in clinic or hospitals.
 - [**Library Master**](https://github.com/thegr8dev/mylibrary): Manage library subscriptions, seat records, user roles, permissions, and seat availability.
 - More to come !
 
