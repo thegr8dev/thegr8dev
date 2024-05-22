@@ -52,12 +52,10 @@ jobs:
 
       - name: Combine with Previous Activity
         run: |
-          if [ -f README.md ]; then
-            awk '/<!--START_SECTION:activity-->/{print;system("cat recent-activity.md");next}1' README.md > temp.md
-            mv temp.md README.md
-          else
-            cat recent-activity.md > README.md
-          fi
+          awk '/<!--START_SECTION:activity-->/, /<!--END_SECTION:activity-->/ {if (!/<!--(START|END)_SECTION:activity-->/) next} {print}' README.md > temp.md
+          mv temp.md README.md
+          awk '/<!--START_SECTION:activity-->/{print;system("cat recent-activity.md");next}1' README.md > temp.md
+          mv temp.md README.md
 
       - name: Commit and Push if Changed
         run: |
