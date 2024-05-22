@@ -30,20 +30,6 @@ jobs:
                 "#### ForkEvent 🍴\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Message:** \"Forked repository\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
               elif .type == "CreateEvent" then
                 "#### CreateEvent ✨\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Message:** \"Created repository\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-              elif .type == "DeleteEvent" then
-                "#### DeleteEvent 🗑️\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Message:** \"Deleted something\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-              elif .type == "ReleaseEvent" then
-                "#### ReleaseEvent 🚀\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name)/releases/tag/\(.payload.release.tag_name))  \n**Message:** \"Released \(.payload.release.name)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-              elif .type == "IssuesEvent" then
-                if .payload.action == "opened" then
-                  "#### IssuesEvent 🐛\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Message:** \"Opened issue: \(.payload.issue.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                elif .payload.action == "closed" then
-                  "#### IssuesEvent 🐛\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Message:** \"Closed issue: \(.payload.issue.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                elif .payload.action == "reopened" then
-                  "#### IssuesEvent 🐛\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Message:** \"Reopened issue: \(.payload.issue.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                else
-                  empty
-                end
               else
                 "#### \(.type) on [\(.repo.name)](https://github.com/\(.repo.name))  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
               end
@@ -57,7 +43,6 @@ jobs:
           awk '/<!--START_SECTION:activity-->/{print;f=1;next} /<!--END_SECTION:activity-->/{f=0} !f{print}' README.md > temp.md
           mv temp.md README.md
           sed -i '/<!--START_SECTION:activity-->/r recent-activity.md' README.md
-          cat README.md
 
       - name: Commit and Push if Changed
         run: |
