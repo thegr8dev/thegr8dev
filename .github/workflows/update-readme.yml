@@ -20,9 +20,9 @@ jobs:
             map(
               if .repo.name != "thegr8dev/thegr8dev" then
                 if .type == "PushEvent" then
-                  "#### Pushd changes in 📤\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Commit:** [View Commit](https://github.com/\(.repo.name)/commit/\(.payload.commits[-1].sha))  \n**Message:** \"\(.payload.commits[-1].message)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+                  "#### Pushed Changes 📤\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Commit:** [View Commit](https://github.com/\(.repo.name)/commit/\(.payload.commits[-1].sha))  \n**Message:** \"\(.payload.commits[-1].message)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
                 elif .type == "PullRequestEvent" then
-                  "#### Pull Request in 🔄\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Pull Request:** [View Pull Request](https://github.com/\(.repo.name)/pull/\(.payload.pull_request.number))  \n**Title:** \"\(.payload.pull_request.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+                  "#### Created Pull Request 🔄\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Pull Request:** [View Pull Request](https://github.com/\(.repo.name)/pull/\(.payload.pull_request.number))  \n**Title:** \"\(.payload.pull_request.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
                 elif .type == "IssueCommentEvent" then
                   "#### Commented on issue 💬\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Comment:** \"\(.payload.comment.body)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
                 elif .type == "ForkEvent" then
