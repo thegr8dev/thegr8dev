@@ -27,7 +27,7 @@
 - HTML/CSS
 
 ### GitHub Stats
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical)
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=thegr8dev&show_icons=true&theme=radical)
 
 ### Recent Activity
 - 💬 Commented on [Issue #123](https://github.com/repository/issues/123) in [repository](https://github.com/repository).
