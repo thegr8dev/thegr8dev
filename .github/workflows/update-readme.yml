@@ -52,9 +52,6 @@ jobs:
           ' >> recent-activity.md
           cat recent-activity.md
 
-      - name: Debug: Show recent-activity.md
-        run: cat recent-activity.md
-
       - name: Update README
         run: |
           awk '/<!--START_SECTION:activity-->/{print;f=1;next} /<!--END_SECTION:activity-->/{f=0} !f{print}' README.md > temp.md
