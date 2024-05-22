@@ -33,4 +33,5 @@
 
 <!--START_SECTION:activity-->
 ### Recent GitHub Activity 🎉
+### Recent GitHub Activity 🎉
 <!--END_SECTION:activity-->
