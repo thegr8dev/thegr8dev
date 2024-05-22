@@ -17,47 +17,43 @@ jobs:
           curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" https://api.github.com/users/thegr8dev/events > events.json
           echo "### Recent GitHub Activity 🎉" > recent-activity.md
           cat events.json | jq -r '
+            map(select(.repo.name != "thegr8dev/thegr8dev")) |
             .[0:5] |
             map(
-              if .repo.name != "thegr8dev/thegr8dev" then
-                if .type == "PushEvent" then
-                  "#### PushEvent 📤\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Commit:** [View Commit](https://github.com/\(.repo.name)/commit/\(.payload.commits[-1].sha))  \n**Message:** \"\(.payload.commits[-1].message)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                elif .type == "PullRequestEvent" then
-                  "#### PullRequestEvent 🔄\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Pull Request:** [View Pull Request](https://github.com/\(.repo.name)/pull/\(.payload.pull_request.number))  \n**Message:** \"\(.payload.pull_request.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                elif .type == "IssueCommentEvent" then
-                  "#### IssueCommentEvent 💬\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Message:** \"\(.payload.comment.body)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                elif .type == "ForkEvent" then
-                  "#### ForkEvent 🍴\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Message:** \"Forked repository\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                elif .type == "CreateEvent" then
-                  "#### CreateEvent ✨\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Message:** \"Created repository\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                elif .type == "IssuesEvent" then
-                  if .payload.action == "opened" then
-                    "#### IssuesEvent Opened 📝\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Title:** \"\(.payload.issue.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                  elif .payload.action == "closed" then
-                    "#### IssuesEvent Closed 🛑\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Title:** \"\(.payload.issue.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                  elif .payload.action == "reopened" then
-                    "#### IssuesEvent Reopened 🔄\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Title:** \"\(.payload.issue.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
-                  else
-                    empty
-                  end
+              if .type == "PushEvent" then
+                "#### PushEvent 📤\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Commit:** [View Commit](https://github.com/\(.repo.name)/commit/\(.payload.commits[-1].sha))  \n**Message:** \"\(.payload.commits[-1].message)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+              elif .type == "PullRequestEvent" then
+                "#### PullRequestEvent 🔄\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Pull Request:** [View Pull Request](https://github.com/\(.repo.name)/pull/\(.payload.pull_request.number))  \n**Message:** \"\(.payload.pull_request.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+              elif .type == "IssueCommentEvent" then
+                "#### IssueCommentEvent 💬\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Message:** \"\(.payload.comment.body)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+              elif .type == "ForkEvent" then
+                "#### ForkEvent 🍴\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Message:** \"Forked repository\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+              elif .type == "CreateEvent" then
+                "#### CreateEvent ✨\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Message:** \"Created repository\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+              elif .type == "IssuesEvent" then
+                if .payload.action == "opened" then
+                  "#### IssuesEvent 🐛\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Message:** \"Opened issue: \(.payload.issue.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+                elif .payload.action == "closed" then
+                  "#### IssuesEvent 🐛\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Message:** \"Closed issue: \(.payload.issue.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+                elif .payload.action == "reopened" then
+                  "#### IssuesEvent 🐛\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Message:** \"Reopened issue: \(.payload.issue.title)\"  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
                 else
-                  "#### \(.type) on [\(.repo.name)](https://github.com/\(.repo.name))  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
+                  empty
                 end
               else
-                empty
+                "#### \(.type) on [\(.repo.name)](https://github.com/\(.repo.name))  \n**Date:** \(.created_at)  \n**Author:** Ankit Kabra ✍️\n"
               end
             ) |
             .[]
           ' >> recent-activity.md
           cat recent-activity.md
 
-      - name: Debug Recent Activity
-        run: cat recent-activity.md
-
       - name: Update README
         run: |
-          awk '/<!--START_SECTION:activity-->/{print;system("cat recent-activity.md");next}1' README.md > temp.md
+          awk '/<!--START_SECTION:activity-->/{print;f=1;next} /<!--END_SECTION:activity-->/{f=0} !f{print}' README.md > temp.md
           mv temp.md README.md
+          sed -i '/<!--START_SECTION:activity-->/r recent-activity.md' README.md
+          cat README.md
 
       - name: Commit and Push if Changed
         run: |
