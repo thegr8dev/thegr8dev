@@ -31,11 +31,11 @@ jobs:
                   "#### Created Repository ✨\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Message:** \"Created repository\"  \n**Date:** \(.created_at | fromdate | strftime("%d/%m/%Y %I:%M %p"))  \n**Author:** [\(.actor.display_login)](https://github.com/\(.actor.login)) ✍️\n"
                 elif .type == "IssuesEvent" then
                   if .payload.action == "opened" then
-                    "#### Issue Opened 📝\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Title:** \"\(.payload.issue.title)\"  \n**Date:** \(.created_at | fromdate | strftime("%d/%m/%Y %I:%M %p"))  \n**Author:** [\(.actor.display_login)](https://github.com/\(.actor.login)) ✍️\n"
+                    "#### Issue Opened 🐛\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Title:** \"\(.payload.issue.title)\"  \n**Date:** \(.created_at | fromdate | strftime("%d/%m/%Y %I:%M %p"))  \n**Author:** [\(.actor.display_login)](https://github.com/\(.actor.login)) ✍️\n"
                   elif .payload.action == "closed" then
                     "#### Issue Closed 🛑\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Title:** \"\(.payload.issue.title)\"  \n**Date:** \(.created_at | fromdate | strftime("%d/%m/%Y %I:%M %p"))  \n**Author:** [\(.actor.display_login)](https://github.com/\(.actor.login)) ✍️\n"
                   elif .payload.action == "reopened" then
-                    "#### Issue Reopened 🔄\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Title:** \"\(.payload.issue.title)\"  \n**Date:** \(.created_at | fromdate | strftime("%d/%m/%Y %I:%M %p"))  \n**Author:** [\(.actor.display_login)](https://github.com/\(.actor.login)) ✍️\n"
+                    "#### Issue Reopened 🐛\n**Repository:** [\(.repo.name)](https://github.com/\(.repo.name))  \n**Issue:** [View Issue](https://github.com/\(.repo.name)/issues/\(.payload.issue.number))  \n**Title:** \"\(.payload.issue.title)\"  \n**Date:** \(.created_at | fromdate | strftime("%d/%m/%Y %I:%M %p"))  \n**Author:** [\(.actor.display_login)](https://github.com/\(.actor.login)) ✍️\n"
                   else
                     empty
                   end
