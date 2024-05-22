@@ -31,4 +31,6 @@
 ### GitHub Stats
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=thegr8dev&show_icons=true&theme=radical)
 
+### Recent Activity
 <!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
