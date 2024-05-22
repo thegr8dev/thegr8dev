@@ -14,7 +14,7 @@ jobs:
 
       - name: Update README
         run: |
-          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/yourusername/events > events.json
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/thegr8dev/events > events.json
           echo "## Recent Activity" > recent-activity.md
           cat events.json | jq '.[0:5] | .[] | "- \(.type) [\(.repo.name)](\(.repo.url)): \(.created_at)"' >> recent-activity.md
           cat recent-activity.md
