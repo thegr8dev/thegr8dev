@@ -32,36 +32,4 @@
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=thegr8dev&show_icons=true&theme=radical)
 
 <!--START_SECTION:activity-->
-### Recent GitHub Activity 🎉
-#### IssuesEvent 🐛
-**Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary/issues/1)  
-**Message:** "Closed issue: Test issue "  
-**Date:** 2024-05-22T10:44:27Z  
-**Author:** Ankit Kabra ✍️
-
-#### IssuesEvent 🐛
-**Repository:** [thegr8dev/doctorpatientportal](https://github.com/thegr8dev/doctorpatientportal/issues/14)  
-**Message:** "Closed issue: Test issue !"  
-**Date:** 2024-05-22T10:44:03Z  
-**Author:** Ankit Kabra ✍️
-
-#### IssuesEvent 🐛
-**Repository:** [thegr8dev/doctorpatientportal](https://github.com/thegr8dev/doctorpatientportal/issues/14)  
-**Message:** "Opened issue: Test issue !"  
-**Date:** 2024-05-22T10:42:45Z  
-**Author:** Ankit Kabra ✍️
-
-#### IssuesEvent 🐛
-**Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary/issues/1)  
-**Message:** "Opened issue: Test issue "  
-**Date:** 2024-05-22T10:41:09Z  
-**Author:** Ankit Kabra ✍️
-
-#### PushEvent 📤
-**Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary)  
-**Commit:** [View Commit](https://github.com/thegr8dev/mylibrary/commit/6190516063f9978a54269b67050d039fecb248e7)  
-**Message:** "Merge branch 'master' of https://github.com/thegr8dev/mylibrary"  
-**Date:** 2024-05-22T09:33:11Z  
-**Author:** Ankit Kabra ✍️
-
 <!--END_SECTION:activity-->
