@@ -33,7 +33,4 @@
 
 ### Recent Activity
 <!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
-
-### Fun Fact
-🚀 When I'm not coding, you can find me exploring the latest tech trends or tinkering with new frameworks and tools.
+## Recent Activity
