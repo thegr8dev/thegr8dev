@@ -33,18 +33,17 @@
 
 <!--START_SECTION:activity-->
 ### Recent GitHub Activity 🎉
+#### IssuesEvent 🐛
+**Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary/issues/1)  
+**Message:** "Opened issue: Test issue "  
+**Date:** 2024-05-22T10:41:09Z  
+**Author:** Ankit Kabra ✍️
+
 #### PushEvent 📤
 **Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary)  
 **Commit:** [View Commit](https://github.com/thegr8dev/mylibrary/commit/6190516063f9978a54269b67050d039fecb248e7)  
 **Message:** "Merge branch 'master' of https://github.com/thegr8dev/mylibrary"  
 **Date:** 2024-05-22T09:33:11Z  
-**Author:** Ankit Kabra ✍️
-
-#### PushEvent 📤
-**Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary)  
-**Commit:** [View Commit](https://github.com/thegr8dev/mylibrary/commit/70fad89899997882bd8586d1214016a229276ab7)  
-**Message:** "Added subscription test"  
-**Date:** 2024-05-22T08:16:06Z  
 **Author:** Ankit Kabra ✍️
 
 <!--END_SECTION:activity-->
