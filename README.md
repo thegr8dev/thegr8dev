@@ -34,6 +34,18 @@
 <!--START_SECTION:activity-->
 ### Recent GitHub Activity 🎉
 #### IssuesEvent 🐛
+**Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary/issues/1)  
+**Message:** "Closed issue: Test issue "  
+**Date:** 2024-05-22T10:44:27Z  
+**Author:** Ankit Kabra ✍️
+
+#### IssuesEvent 🐛
+**Repository:** [thegr8dev/doctorpatientportal](https://github.com/thegr8dev/doctorpatientportal/issues/14)  
+**Message:** "Closed issue: Test issue !"  
+**Date:** 2024-05-22T10:44:03Z  
+**Author:** Ankit Kabra ✍️
+
+#### IssuesEvent 🐛
 **Repository:** [thegr8dev/doctorpatientportal](https://github.com/thegr8dev/doctorpatientportal/issues/14)  
 **Message:** "Opened issue: Test issue !"  
 **Date:** 2024-05-22T10:42:45Z  
