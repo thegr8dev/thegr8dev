@@ -33,14 +33,14 @@
 
 <!--START_SECTION:activity-->
 ### Recent GitHub Activity 🎉
-#### Issue Closed 🛑
+#### Issue Closed ✅
 **Repository:** [thegr8dev/mylibrary](https://github.com/thegr8dev/mylibrary)  
 **Issue:** [View Issue](https://github.com/thegr8dev/mylibrary/issues/1)  
 **Title:** "Test issue "  
 **Date:** 22/05/2024 10:44 AM  
 **Author:** [thegr8dev](https://github.com/thegr8dev) ✍️
 
-#### Issue Closed 🛑
+#### Issue Closed ✅
 **Repository:** [thegr8dev/doctorpatientportal](https://github.com/thegr8dev/doctorpatientportal)  
 **Issue:** [View Issue](https://github.com/thegr8dev/doctorpatientportal/issues/14)  
 **Title:** "Test issue !"  
